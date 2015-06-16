@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Develo_PaymentOnAccount>
+            <version>0.1.0</version>
+        </Develo_PaymentOnAccount>
+    </modules>
+
+    <global>
+        <blocks>
+            <paymentonaccount>
+                <class>Develo_PaymentOnAccount_Block</class>
+            </paymentonaccount>
+        </blocks>
+
+        <models>
+            <paymentonaccount>
+                <class>Develo_PaymentOnAccount_Model</class>
+            </paymentonaccount>
+        </models>
+    </global>
+
+    <default>
+        <payment>
+            <paymentonaccount>
+                <active>1</active>
+                <model>paymentonaccount/paymentOnAccount</model>
+                <order_status>pending</order_status>
+                <title>Payment on Account</title>
+                <allowspecific>0</allowspecific>
+                <group>offline</group>
+            </paymentonaccount>
+        </payment>
+    </default>
+</config>
+
